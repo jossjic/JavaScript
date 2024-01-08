@@ -1,0 +1,24 @@
+<head>
+    <meta charset = "utf-8">
+    <title>Méxicooo</title>
+</head>
+
+<body>
+    <canvas width="600" height="400">
+
+    </canvas>
+    <script>
+        var pantalla = document.querySelector("canvas");
+        var pincel = pantalla.getContext("2d");
+        pincel.fillStyle = "green";
+        pincel.fillRect(0,0,200,400);
+        pincel.fillStyle = "white";
+        pincel.fillRect(200,0,400,400);
+        pincel.fillStyle = "red";
+        pincel.fillRect(400,0,600,400);
+        pincel.fillStyle = "brown";
+        pincel.beginPath();
+        pincel.arc(300,200,50,0,2*3.1416);
+        pincel.fill();
+    </script>
+</body>

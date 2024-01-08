@@ -1,0 +1,36 @@
+<canvas id="canvas" width="600" height="400"></canvas>
+<script>
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext("2d");
+    var act = true;
+    ctx.fillStyle="black";
+    ctx.fillRect(0,0, 600, 400);
+    function circ(x, y, r) {
+        ctx.fillStyle = "white";
+        ctx.beginPath();
+        ctx.arc(x, y, r, 0, 2 * Math.PI);
+        ctx.fill();
+    }
+
+    function limpiar() {
+        ctx.fillStyle="black";
+        ctx.fillRect(0,0, 600, 400);
+    }
+
+    function animate() {
+        limpiar();
+        for (var i = 20; i < 600; i++) {
+            circ(Math.random() * 600, Math.random() * 400, Math.random() * 5);
+        }
+    }
+
+    canvas.onclick = function() {
+        act = !act;
+    };
+
+    setInterval(function() {
+        if (act) {
+            animate();
+        }
+    }, 100);
+</script>

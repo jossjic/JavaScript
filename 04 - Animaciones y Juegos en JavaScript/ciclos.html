@@ -1,0 +1,31 @@
+<head>
+    <meta charset = "utf-8">
+    <title>Ciclos</title>
+</head>
+
+<body>
+    <canvas width="600" height="400">
+
+    </canvas>
+    <script>
+        function cuaV(x,y,color){
+            var pantalla = document.querySelector("canvas");
+            var pincel = pantalla.getContext("2d");
+            pincel.fillStyle = color;
+            pincel.strokeStyle="black";
+            pincel.fillRect(x,y,50,50);
+            pincel.strokeRect(x,y,50,50);
+        }
+
+        for (var i = 0; i <=600; i+=50) {
+            for (var j = 0; j <=400 ; j+=50) {
+                cuaV(i,j,"blue");
+            }
+        }
+    
+       
+
+        
+
+    </script>
+</body>

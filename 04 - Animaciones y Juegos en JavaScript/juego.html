@@ -1,0 +1,72 @@
+<canvas width="600" height="400"></canvas>
+<script>
+    var pantalla = document.querySelector("canvas");
+    var pincel = pantalla.getContext("2d");
+    var colorid= 0;
+    var radio=10;
+    var rx;
+    var ry;
+    var puntaje=0;
+    var backc="lightgray";
+    pincel.fillStyle=backc;
+    pincel.fillRect(0,0, 600, 400);
+
+    function limpiar() {
+        pincel.fillStyle=backc;
+        pincel.fillRect(0,0, 600, 400);
+    }
+
+    function circ(x,y,r,c){
+        pincel.fillStyle=c;
+        pincel.beginPath();
+        pincel.arc(x, y, r, 0, 2*Math.PI);
+        pincel.fill();
+    }
+    var x = 300;
+var direccion = 1; // Variable para controlar la dirección del movimiento del círculo
+
+function diana(x,y){
+    circ(x, y, radio+20,"red");
+    circ(x, y, radio+10,"white");
+    circ(x, y, radio,"red");
+}
+
+function random(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+}
+
+
+
+function act() {
+    limpiar();
+    rx=random(radio+20,pantalla.width-(radio+20));
+    ry=random(radio+20,pantalla.height-(radio+20));
+    diana(rx,ry);
+}
+
+function disparar(evento){
+    var x=evento.pageX-pantalla.offsetLeft;
+    var y=evento.pageY-pantalla.offsetTop;
+
+    if(
+        (x<rx+radio)&&
+        (x>rx-radio)&&
+        (y<ry+radio)&&
+        (y>ry-radio)
+    ){
+        if (puntaje>=10){
+            alert("Felicidades Ganaste!");
+            alert("Puntaje: "+puntaje);
+            puntaje=0;
+            backc="black";
+        }else{
+            puntaje++;
+        }
+        
+        
+    }
+}
+
+setInterval(act, 2000);
+pantalla.onclick=disparar;
+</script>

@@ -1,0 +1,40 @@
+<canvas width="600" height="400"></canvas>
+<script>
+    var pantalla = document.querySelector("canvas");
+    var pincel = pantalla.getContext("2d");
+    var colorid= 0;
+    pincel.fillStyle="lightgray";
+    pincel.fillRect(0,0, 600, 400);
+
+    function limpiar() {
+        pincel.fillStyle="lightgray";
+        pincel.fillRect(0,0, 600, 400);
+    }
+
+    function circ(x,y,r){
+        pincel.fillStyle="cyan";
+        pincel.beginPath();
+        pincel.arc(x, y, r, 0, 2*Math.PI);
+        pincel.fill();
+    }
+    var x = 300;
+var direccion = 1; // Variable para controlar la dirección del movimiento del círculo
+
+function act() {
+    limpiar();
+    circ(x, 20, 10);
+
+    // Actualizar la posición del círculo en función de la dirección
+    x += direccion;
+
+    // Cambiar la dirección si el círculo alcanza los límites del canvas
+    if (x >= 590 || x <= 10) {
+        direccion *= -1;
+    }
+}
+
+setInterval(act, 10);
+
+
+    setInterval(act,10);
+</script>
