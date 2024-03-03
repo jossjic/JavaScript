@@ -1,70 +1,70 @@
-## Javascript 🚀 Portfolio - José Juan Irene Cervantes
-[Click aquí para ver la versión en español de la documentación](README_ES.md)
+## Portafolio de Javascript 🚀 - José Juan Irene Cervantes
+[Click here to see the english version of the documentation](README.md)
 
-Greetings to code enthusiasts! This repository houses a collection of JavaScript projects ranging from basic concepts to more advanced applications. Each project represents a step on the path to learning and mastering JavaScript.
+¡Saludos a los entusiastas del código! Este repositorio alberga una colección de proyectos de JavaScript que abarcan desde los conceptos básicos hasta aplicaciones más avanzadas. Cada proyecto representa un paso en el camino del aprendizaje y la maestría de JavaScript.
 
 ---
 
-## Main Projects
+## Proyectos Principales
 
-### 01 - Javascript Basics (My first JavaScript course)
+### 01 - Basicos de Javascript (Mi primer curso de JavaScript)
 
 ![Gif Test](gifs/js_basicos.gif)
 
-- **Description:** This project marks the start of my journey with JavaScript, where I explored the fundamental concepts of this programming language.
+- **Descripción:** Este proyecto marca el inicio de mi viaje con JavaScript, donde exploré los conceptos fundamentales de este lenguaje de programación.
 
 
-### 02 - Javascript Exercises (Key Concepts)
+### 02 - Ejercicios Javascript (Conceptos Primordiales)
 
 ![Gif Test](gifs/js_ejercicios.gif)
 
-- **Description:** A series of practical exercises focusing on the key concepts of JavaScript. Here I worked on consolidating my understanding of the language's foundations.
+- **Descripción:** Una serie de ejercicios prácticos que se centran en los conceptos primordiales de JavaScript. Aquí trabajé en consolidar mi comprensión de las bases del lenguaje.
 
 
-### 03 - Javascript Exercises (Basic Calculations)
+### 03 - Ejercicios Javascript (Calculos Básicos)
 
 ![Gif Test](gifs/js_calculos.gif)
 
-- **Description:** More exercises, this time focusing on basic calculations and mathematical operations with JavaScript. Fundamental practice to develop problem-solving skills.
+- **Descripción:** Más ejercicios, esta vez centrados en cálculos básicos y operaciones matemáticas con JavaScript. Una práctica fundamental para desarrollar habilidades de resolución de problemas.
 
 
-### 04 - Animations and Games in JavaScript
+### 04 - Animaciones y Juegos en JavaScript
 
 ![Gif Test](gifs/js_animaciones.gif)
 
-- **Description:** Project dedicated to exploring JavaScript's capabilities to create animations and interactive games. A glimpse into the fun side of programming.
+- **Descripción:** Proyecto dedicado a explorar las capacidades de JavaScript para crear animaciones y juegos interactivos. Un vistazo al lado más divertido de la programación.
 
 
-### 05 - To Do List (DOM Manipulation and Modularization)
+### 05 - To Do List (Manipulación del DOM y Modularización)
 
 ![Gif Test](gifs/todo_list.gif)
 
-- **Description:** A task list application that focuses on DOM manipulation and code modularization. Here, I apply advanced JavaScript concepts to create a functional and organized application.
+- **Descripción:** Una aplicación de lista de tareas que se enfoca en la manipulación del DOM y la modularización del código. Aquí, aplico conceptos avanzados de JavaScript para crear una aplicación funcional y organizada.
 
 
 ### 06 - Doguito Petshop (CRUD Async json-server backend)
 
 ![Gif Test](gifs/doguitoCRUD.gif)
 
-- **Description:** A project that implements CRUD (Create, Read, Update, Delete) operations using an asynchronous JSON backend with json-server. A step further towards understanding data management and full-stack development.
+- **Descripción:** Un proyecto que implementa las operaciones CRUD (Crear, Leer, Actualizar, Eliminar) utilizando un backend JSON asíncrono con json-server. Un paso más hacia la comprensión de la gestión de datos y el desarrollo full-stack.
 
 >[!WARNING]
-> ***To test all the projects, just run the .js files in the browser, with the exception of `06 - Doguito Petshop (CRUD Async json-server backend)` and `05 - To Do List (DOM Manipulation and Modularization)`. For project 05, it is necessary to raise the page on a web server and for project 06, you need to follow the next steps:***
->    - Download the folder in zip (recommended) or clone the repository
->    - Unzip the folder if you downloaded it
->    - Run the lista_cliente.html file (it is 100% necessary to do it on a web server due to http protocol rules)
->    - Raise a backend server with the db.json file, I used npm's json-server for this, following these commands in the terminal of the root folder:
+> ***Para probar todos los proyectos basta con ejecutar en el navegador los archivos .js, en excepción de `06 - Doguito Petshop (CRUD Async json-server backend)` y `05 - To Do List (Manipulación del DOM y Modularización)`, para el proyecto 05 es necesario levantar la página en un servidor web y para el proyecto 06 hace falta seguir los siguientes pasos:***
+>    - Descargar la carpeta en zip (recomendado) o clonar el repositorio
+>    - Descomprimir la carpeta en caso de haberla descargado
+>    - Ejecutar el archivo lista_cliente.html (es 100% necesario hacerlo en un servidor web debido a reglas del protocolo http)
+>    - Levantar un servidor de backend con el archivo db.json, yo utilicé json-server de npm para esto, siguiendo estos comandos en terminal de la carpeta raíz:
 ~~~
 npm install json-server
-Set-ExecutionPolicy Unrestricted (you need to run the terminal with administrator permissions to do this)
+Set-ExecutionPolicy Unrestricted (es necesario ejecutar la terminal con permisos de administrador para hacer esto)
 json-server .\db.json
 ~~~
-And done, that's how I temporarily mounted the page's backend server
+Y listo, así monté temporalmente el servidor backend de la página
 
 >[!IMPORTANT]
-> ## Contributions and Contact
-> - I'm open to collaborations and suggestions! Feel free to explore, fork, and contribute to this repository.
-> - For any questions or comments, please do not hesitate to get in touch at:
+> ## Contribuciones y Contacto
+> - ¡Estoy abierto a colaboraciones y sugerencias! Siéntete libre de explorar, bifurcar y contribuir a este repositorio.
+> - Para cualquier pregunta o comentario, no dudes en ponerte en contacto en:
 > - [LinkedIn](https://www.linkedin.com/in/jossjic/)
-> - [Email](mailto:jossjic_03@hotmail.com)
-> - **Thank you for visiting and exploring my Javascript project portfolio!**
+> - [Correo](mailto:jossjic_03@hotmail.com)
+> - **¡Gracias por visitar y explorar mi portafolio de proyectos Javascript!**
